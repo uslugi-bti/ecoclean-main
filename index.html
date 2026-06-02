@@ -1,0 +1,1237 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чиста Перемога</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="data:image/x-icon;base64,AAABAAMAEBAAAAEAIABoBAAANgAAACAgAAABACAAKBEAAJ4EAAAwMAAAAQAgAGgmAADGFQAAKAAAABAAAAAgAAAAAQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPWcIXDxmCW4AAAAAAAAAAAAAAAAAAAAAQGAACDNmAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYSgBgGEsAaTtnCcc7ZgmsAAAAAAAAAAAAAAAAPGcHSDtnCcI8ZQnJPGYJc0BgAAgAAAAAAAAAAAAAAAAAAAAAF0sCmRhLAd48ZgnrPGYJiQAAAAAAAAAAI1EAFiBQAtUtWgbiO2cJxztnCfY7ZwqUQGAACAAAAAAAAAAAAAAAABlKAnwYSgH9OmYJ/TxnC3cAAAAAAAAAABlKAB8cTQHeHE4Co0BqAAw7ZglwO2YJ9ztmCn0AAAAAAAAAAAAAAAAZSgKHGEoB9DtnCfs8Zwp8AAAAAAAAAAAqVQAGHU0CqR1NAegbTgBBLl0ACzxmCrs7ZgnZO2IKGgAAAAAzZgAFGEsBxhhLAb87ZgngPGYKmQAAAAAAAAAAAAAAAB1OABodTQHWHE0B5x1PAms5ZAteO2YJ9ztkCTgAMwAFGksCdxhKAfgZTABbPGYJpztmCddVVQADAAAAAAAAAAAAAAAAIUoAHx1NAbocTQH3IVAC4TtmCf8pVwavGEoBxxhKAfcZSwKkFE4ADTtnCVI7Zgn6PGkIRAAAAAAAAAAAAAAAAAAAAAAkSQAOHE4ASCVVBLE7Zgn+JFQD4RlKAawaSgBPFE4ADQAAAAA5aAkbO2YK1TtnCc5AagsYAAAAAAAAAAAAAAAAAAAAADNmAAU7ZgmTO2UJ6jtlDCsAAAAAAAAAAAAAAAAAAAAAAAAAATtpCk47Zgn4PGUJvzlqByQAAAAAAAAAADNmAAU8Zwl3O2YJ8ztmCqBJbQAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPGcLWTpmCeM7Zgn2O2YIuztnCbA7ZgnkO2YJ9DtmCaU5cRwJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFVVAAM8ZQcmO2cKaDxmCac8ZwqyPGcJiDtmDTwzZgAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAACAAAABAAAAAAQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOXEACTpkCVQ6ZwhcPGkPEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAADAAAABgAAAAAQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOmUFMDplBTBAcBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGEwAQBtKADAAAAAAAAAAAAAAAAA8ZQmQO2YJ/ztmCf87ZwnfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYSwKgGEoB/xhKAf8YSwG/AAAAAEBgEBA7Zgn/O2YJ/ztmCf87Zgn/PWYKUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtQADAYSgH/GEoB/xhKAf8YSgH/GEwAQDxoCEA7Zgn/O2YJ/ztmCf87Zgn/PWULYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9ZgpQO2YJcDxmCoA6ZQhgQGgIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtQADAYSgH/GEoB/xhKAf8YSgH/GEoCgDtmCXA7Zgn/O2YJ/ztmCf87Zgn/QGgQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPGYIgDtnCd87Zgn/O2YJ/ztmCf87Zgn/O2YJ/zxnCb88aAhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZSwHvGEoB/xhKAf8YSgH/GUoBsDxlCZA7Zgn/O2YJ/ztmCf87Zgn/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8ZgiAO2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/PGcJkEBwEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYSwG/GEoB/xhKAf8YSgH/GUoBzzxnCq87Zgn/O2YJ/ztmCf87ZgnfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB1NAGAkVAP/LVsG/zdjCP87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztnCs9AaAggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYSQKgGEoB/xhKAf8YSgH/GUoB7zxmCs87Zgn/O2YJ/ztmCf88Zwm/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxNAb8cTQH/HE0B/xxNAf8kVAP/L1wG7ztmCd87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87ZwnfQGgIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYSQKgGEoB/xhKAf8YSgH/GEoB/ztmCd87Zgn/O2YJ/ztmCf87ZwqfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIFAAEBxNAf8cTQH/HE0B/xxNAf8cTQGvAAAAAAAAAAA4aAggO2cJvztmCf87Zgn/O2YJ/ztmCf87Zgn/O2cJ30BwEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYSQKgGEoB/xhKAf8YSgH/GEoB/ztmCe87Zgn/O2YJ/ztmCf87ZwqfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIFAAIBxNAf8cTQH/HE0B/xxNAf8dTQNgAAAAAAAAAAAAAAAAAAAAADlnCW87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztnCp8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYSQKgGEoB/xhKAf8YSgH/GEoB/ztmCf87Zgn/O2YJ/ztmCf87ZwqfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIFAAEBxNAf8cTQH/HE0B/xxNAf8dTQKfAAAAAAAAAAAAAAAAAAAAAAAAAAA7aQtfO2YJ/ztmCf87Zgn/O2YJ/ztmCf86aAtgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZTAGvGEoB/xhKAf8YSgH/GEoB3ztmCf87Zgn/O2YJ/ztmCf88ZgqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxOAc8cTQH/HE0B/xxNAf8dTgHfIFAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAOmYKfztmCf87Zgn/O2YJ/ztmCf87ZwnfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYSgHfGEoB/xhKAf8YSgH/GUoBzztmCf87Zgn/O2YJ/ztmCf88ZwuQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB1NA2AcTQH/HE0B/xxNAf8cTQH/HU0CnwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADtnCb87Zgn/O2YJ/ztmCf87Zgn/OmgLYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBQABAYSgH/GEoB/xhKAf8YSgH/GUoCkDtmCf87Zgn/O2YJ/ztmCf87ZwqfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBQACAdTQHfHE0B/xxNAf8cTQH/HE0B/xxOAIAAAAAAAAAAAAAAAAAAAAAAAAAAADhoCCA7Zgn/O2YJ/ztmCf87Zgn/O2cJ3wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlLAnAYSgH/GEoB/xhKAf8YSgH/GEoDYDtmCd87Zgn/O2YJ/ztmCf86ZwmwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdTQNgHE0B/xxNAf8cTQH/HE0B/xxNAf8cTgCAAAAAAAAAAAAAAAAAAAAAAAAAAAA7ZwqfO2YJ/ztmCf87Zgn/O2YJ/zpqCzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhLAb8YSgH/GEoB/xhKAf8YSgH/IFAAEDxmCs87Zgn/O2YJ/ztmCf88Zwm/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHU0CnxxNAf8cTQH/HE0B/xxNAf8cTQH/HE4AgAAAAAAAAAAAAAAAAAAAAAA6agswO2YJ/ztmCf87Zgn/O2YJ/zxnC5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGUsAcBhKAf8YSgH/GEoB/xhKAf8YSwG/AAAAADxnCq87Zgn/O2YJ/ztmCf87ZgnvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIFAAEB1NAd8cTQH/HE0B/xxNAf8cTQH/HE0B/xxNAb8gUAAgAAAAAAAAAAAAAAAAO2YJ3ztmCf87Zgn/O2YJ/zxnCb8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbSgAwGUsB7xhKAf8YSgH/GEoB/xhKAf8YTABAAAAAADxlCZA7Zgn/O2YJ/ztmCf87Zgn/QHAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBQACAdTQHfHE0B/xxNAf8cTQH/HE0B/xxNAf8dTgHvHEwAgCBQABAAAAAAO2cKnztmCf87Zgn/O2YJ/ztmCf8AAAAAAAAAAAAAAAAAAAAAAAAAABhKAGAZSwHvGEoB/xhKAf8YSgH/GEoB/xlKAa8AAAAAAAAAAD1mClA7Zgn/O2YJ/ztmCf87Zgn/PWYKUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgUAAQHEwBzxxNAf8cTQH/HE0B/xxNAf8cTQH/HE0B/x1OAe8cTAKQMWAGoDtmCf87Zgn/O2YJ/ztmCf9AaBAgAAAAABhIACAYSgBgGEoB3xhKAf8YSgH/GEoB/xhKAf8YSgH/GEoB3yBQABAAAAAAAAAAADhoCCA7Zgn/O2YJ/ztmCf87Zgn/O2cKnwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB1OAo8cTQH/HE0B/xxNAf8cTQH/HE0B/xxNAf8cTQH/JFQD/ztmCf87Zgn/O2YJ/ztmCf8kUwTPGUsBzxhKAf8YSgH/GEoB/xhKAf8YSgH/GEoB/xhKAf8YSgHfGFAAIAAAAAAAAAAAAAAAAAAAAAA8ZgrPO2YJ/ztmCf87Zgn/O2cJ3wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcUARAHU0B3xxNAf8cTQH/HE0B/xxNAf8cTQH/JFQD/ztmCf87Zgn/O2YJ/ztmCf8hUQP/GEoB/xhKAf8YSgH/GEoB/xhKAf8YSgH/GEoB/xhKAd8YUAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA8ZQmQO2YJ/ztmCf87Zgn/O2YJ/zxoCEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIFAAEBxOAn8dTQHvHE0B/xxNAf8cTQH/KFcE/ztmCf87Zgn/O2YJ/ztmCf8fTwP/GEoB/xhKAf8YSgH/GEoB/xhKAf8YSgH/GEoCfyBQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4aAggO2YJ/ztmCf87Zgn/O2YJ/ztnCp8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgUAAQHVADUBxNAb8dTQHvLlsG/ztmCf87Zgn/O2YJ/ztmCf8dTgL/GEoB/xhKAf8YSgH/GEoB3xhKAn8YUAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO2cJvztmCf87Zgn/O2YJ/ztmCf86agswAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgUAAQOWQJzztmCf87Zgn/O2YJ/ztmCe8YSwKfGUsCjxhKA2AbSgUwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOmUIYDtmCf87Zgn/O2YJ/ztmCf87ZwnfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAYBAQO2YJ/ztmCf87Zgn/O2YJ/zljCbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADtmCd87Zgn/O2YJ/ztmCf87Zgn/PGYIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8ZQmQO2YJ/ztmCf87Zgn/O2YJ/zViCGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADhoCCA7Zgn/O2YJ/ztmCf87Zgn/O2YJ/zpoCGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADxoCEA7Zgn/O2YJ/ztmCf87Zgn/O2YJ70BwEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6Zgp/O2YJ/ztmCf87Zgn/O2YJ/ztmCf86aAhgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOGgIIDtnCd87Zgn/O2YJ/ztmCf87Zgn/PGYKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO2YJ3ztmCf87Zgn/O2YJ/ztmCf87Zgn/PGYIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8aAhAO2cJ3ztmCf87Zgn/O2YJ/ztmCf87ZgnfQHAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOGgIIDtmCd87Zgn/O2YJ/ztmCf87Zgn/O2YJ/zxnCb88aAhAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOGgIIDtmCqA7Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCe9AaAggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADhoCCA7ZgnfO2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/PGcJvzxmCIA8aAhAQGgIIEBoCCBAaAggPGgIQDtmCXA8ZgmvO2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ7zxoCEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4aAggO2YKzztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87ZgnfOmoLMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQHAQEDtmCY87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztnCp9AaAggAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6ZQUwO2cJvztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zwm/OmULYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBwEBA6Zgp/O2cJvztlCe87Zgn/O2YJ/ztmCf87Zgn/O2YJ/ztmCf87Zwm/PWcLjzpqCzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAaBAgOmoLMDxoDEA8aAxAQGgQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+        @keyframes mp-fade-in {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        @keyframes mp-fade-out {
+            from {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-20px);
+            }
+        }
+
+        @keyframes mp-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .mp-banner {
+            animation: mp-fade-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        .mp-banner.mp-hidden {
+            animation: mp-fade-out 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+            pointer-events: none;
+        }
+
+        @media (max-width: 480px) {
+            .mp-brand-text {
+                display: none !important;
+            }
+
+            .mp-pill {
+                gap: 12px !important;
+            }
+
+            .mp-right-side {
+                gap: 12px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="min-h-screen bg-white font-sans" style="font-family: Inter, sans-serif;">
+            <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between py-3">
+                    <a href="#" class="logo flex items-center gap-2 shrink-0">
+                            <img src="img/logo.png" alt="logo">
+                    </a>
+                    <nav class="hidden lg:flex items-center gap-7"><a href="#about"
+                            class="text-sm font-medium text-gray-600 hover:text-green-600 transition-colors duration-200 relative group">Про
+                            нас<span
+                                class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300 rounded-full"></span></a><a
+                            href="#services"
+                            class="text-sm font-medium text-gray-600 hover:text-green-600 transition-colors duration-200 relative group">Наші
+                            послуги<span
+                                class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300 rounded-full"></span></a><a
+                            href="#portfolio"
+                            class="text-sm font-medium text-gray-600 hover:text-green-600 transition-colors duration-200 relative group">Наш
+                            блог<span
+                                class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300 rounded-full"></span></a><a
+                            href="#contact"
+                            class="text-sm font-medium text-gray-600 hover:text-green-600 transition-colors duration-200 relative group">Контакти<span
+                                class="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300 rounded-full"></span></a>
+                    </nav>
+                    <div class="hidden lg:flex items-center gap-5">
+                        <div class="flex flex-col items-end"><span
+                                class="text-[10px] text-gray-400 uppercase tracking-wider font-medium">Зателефонуйте
+                                нам</span><a href="tel:+380934311687"
+                                class="text-sm font-bold text-gray-900 hover:text-green-600 transition-colors">+38 093 431 16 87</a></div><button
+                            class="bg-green-600 hover:bg-green-700 text-white text-sm font-bold px-5 py-2.5 rounded-full transition-all shadow-lg shadow-green-200/60 hover:shadow-green-300/60 hover:-translate-y-0.5 active:translate-y-0">Замовити
+                            чистку</button>
+                    </div><button class="lg:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
+                        aria-label="Відкрити меню"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6"
+                            aria-hidden="true">
+                            <path d="M4 12h16"></path>
+                            <path d="M4 18h16"></path>
+                            <path d="M4 6h16"></path>
+                        </svg></button>
+                </div>
+                <div id="mobileMenu" class="lg:hidden bg-white border-t border-gray-100 overflow-hidden" style="opacity: 1; height: auto;"><div class="px-4 py-5 flex flex-col gap-1"><a href="#about" class="text-base font-medium text-gray-800 py-3 px-3 rounded-lg hover:bg-green-50 hover:text-green-700 transition-colors">Про нас</a><a href="#services" class="text-base font-medium text-gray-800 py-3 px-3 rounded-lg hover:bg-green-50 hover:text-green-700 transition-colors">Наші послуги</a><a href="#portfolio" class="text-base font-medium text-gray-800 py-3 px-3 rounded-lg hover:bg-green-50 hover:text-green-700 transition-colors">Наш блог</a><a href="#contact" class="text-base font-medium text-gray-800 py-3 px-3 rounded-lg hover:bg-green-50 hover:text-green-700 transition-colors">Контакти</a><button class="mt-3 w-full bg-green-600 text-white text-center py-3 rounded-xl font-bold text-base">Замовити чистку</button></div></div>
+            </header>
+            <section
+                class="hero relative pt-14 pb-20 overflow-hidden">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 items-center">
+                    <div style="opacity: 1; transform: none;">
+                        <div
+                            class="yellow inline-flex items-center gap-2 px-4 py-1.5 bg-green-100 text-green-700 rounded-full text-xs font-bold mb-6 border border-green-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-leaf w-3.5 h-3.5" aria-hidden="true">
+                                <path
+                                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z">
+                                </path>
+                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                            </svg><span>Професійний клінінг у Дніпрі</span></div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] mb-5">Чиста Перемога<span class="text-green-600"><br>професійне</span> прибирання</h1>
+                        <p class="text-lg text-gray-500 mb-3 font-semibold text-green-700">Замовляйте Професійну чистку сьогодні
+                        </p>
+                        <p class="text-base text-gray-500 mb-8 max-w-md leading-relaxed">Ми — професійна команда
+                            фахівців з прибирання, яка надасть Вам найвищу якість послуг.</p>
+                        <div class="flex flex-col sm:flex-row gap-3"><button
+                                class="inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white px-7 py-3.5 rounded-xl font-bold text-base transition-all shadow-lg shadow-green-200 hover:-translate-y-0.5"><span>Замовити прибирання</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg></button></div>
+                        <div class="mt-10 flex items-center gap-5">
+                            <div class="flex -space-x-2.5">
+                                <div
+                                    class="w-9 h-9 rounded-full border-2 border-white bg-gray-200 overflow-hidden shadow-sm">
+                                    <img alt="Клієнт" src="https://i.pravatar.cc/80?u=11"></div>
+                                <div
+                                    class="w-9 h-9 rounded-full border-2 border-white bg-gray-200 overflow-hidden shadow-sm">
+                                    <img alt="Клієнт" src="https://i.pravatar.cc/80?u=12"></div>
+                                <div
+                                    class="w-9 h-9 rounded-full border-2 border-white bg-gray-200 overflow-hidden shadow-sm">
+                                    <img alt="Клієнт" src="https://i.pravatar.cc/80?u=13"></div>
+                                <div
+                                    class="w-9 h-9 rounded-full border-2 border-white bg-gray-200 overflow-hidden shadow-sm">
+                                    <img alt="Клієнт" src="https://i.pravatar.cc/80?u=14"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" style="opacity: 1; transform: none;">
+                        <div
+                            class="relative hero-img rounded-3xl overflow-hidden shadow-2xl shadow-green-100 border border-white">
+                            <img alt="Команда EcoClean за роботою"
+                                class="w-full h-auto object-cover broken-image-fallback"
+                                src="img/hero/01.jpg"
+                                data-fallback-applied="true">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+                        </div>
+                        <div
+                            class="hidden md:flex absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl px-5 py-4 items-center gap-3 border border-gray-100 z-10">
+                            <div class="w-11 h-11 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star w-5 h-5 text-white fill-current"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg></div>
+                            <div>
+                                <p class="text-lg font-black text-gray-900 leading-tight">4.9 / 5</p>
+                                <p class="text-[11px] text-gray-400 uppercase tracking-wide font-medium">Середня оцінка
+                                </p>
+                            </div>
+                        </div>
+                        <div class="absolute -top-12 -right-12 w-60 h-60 bg-green-300/20 rounded-full blur-3xl -z-10">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div class="mb-10">
+                        <h2 class="text-3xl lg:text-4xl font-black text-gray-900 mb-4">Ласкаво просимо до нашої
+                            клінінгової компанії!</h2>
+                        <p class="text-gray-500 max-w-3xl leading-relaxed mb-4">Ми — професійна команда фахівців з
+                            прибирання, які готові надати Вам найвищу якість послуг. Незалежно від того, Вам потрібно
+                            прибирання Вашого будинку, офісу, ресторану чи будь-якого іншого приміщення, ми знаємо, як
+                            забезпечити чистоту і порядок, які Ви заслуговуєте.</p>
+                        <p class="text-gray-500 max-w-3xl leading-relaxed">Наша команда складається з досвідчених та
+                            надійних спеціалістів, які пройшли ретельний відбір та навчання. Вони мають широкі знання у
+                            галузі професійного прибирання та володіють сучасними методами і технологіями, що
+                            забезпечують найвищу якість.</p>
+                    </div>
+                    <div class="mb-8">
+                        <p class="text-base font-bold text-gray-900 mb-5">Наші послуги включають, але не обмежуються:
+                        </p>
+                        <div class="grid sm:grid-cols-2 gap-x-8 gap-y-3">
+                            <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-circle-check w-5 h-5 text-green-500 mt-0.5 shrink-0"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                                <p class="text-sm text-gray-600 leading-relaxed">Глибоке очищення всіх поверхонь від пилу та забруднень.</p>
+                            </div>
+                            <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-circle-check w-5 h-5 text-green-500 mt-0.5 shrink-0"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                                <p class="text-sm text-gray-600 leading-relaxed">Комплексне прибирання кухні та санвузлів з дезінфекцією.</p>
+                            </div>
+                            <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-circle-check w-5 h-5 text-green-500 mt-0.5 shrink-0"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                                <p class="text-sm text-gray-600 leading-relaxed">Очищення важкодоступних місць і деталей інтер’єру.</p>
+                            </div>
+                            <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-circle-check w-5 h-5 text-green-500 mt-0.5 shrink-0"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                                <p class="text-sm text-gray-600 leading-relaxed">Видалення будівельного пилу, залишків матеріалів після ремонту.</p>
+                            </div>
+                            <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-circle-check w-5 h-5 text-green-500 mt-0.5 shrink-0"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                                <p class="text-sm text-gray-600 leading-relaxed">Усунення складних забруднень (фарба, клей, плями).</p>
+                            </div>
+                            <div class="flex items-start gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-circle-check w-5 h-5 text-green-500 mt-0.5 shrink-0"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>
+                                <p class="text-sm text-gray-600 leading-relaxed">Хімічне чищення меблів і текстилю з глибоким очищенням.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl p-6 border yellow">
+                        <p class="text-gray-700 leading-relaxed text-sm mb-4">Ми прагнемо задовольняти потреби наших
+                            клієнтів і надаємо персоналізований підхід до кожного проекту. Наші ціни конкурентні і
+                            якість відповідає найвищим стандартам.</p>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-5">Зверніться до нас сьогодні, і ми з радістю
+                            візьмемо на себе всі Ваші потреби з прибирання.</p>
+                        <p class="text-sm font-bold text-gray-900 mb-5">Дякуємо за Ваш інтерес до наших послуг!</p>
+                        <button
+                            class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition-all shadow-md shadow-green-200"><span>Замовити
+                                чистку</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg></button>
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="py-20 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div class="text-center mb-14">
+                        <h2 class="text-3xl lg:text-4xl font-black text-gray-900 mb-3">Ми пропонуємо професійні послуги
+                            з прибирання</h2>
+                        <p class="text-gray-500 max-w-xl mx-auto">Повний спектр клінінгових послуг для будь-яких потреб
+                            вашого дому та бізнесу.</p>
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-green-200 hover:shadow-lg hover:shadow-green-50 transition-all duration-300">
+                            <div class="relative services-img h-48 overflow-hidden"><img alt="Генеральне прибирання"
+                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 broken-image-fallback"
+                                    src="img/services/01.png"
+                                    data-fallback-applied="true">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                                <div
+                                    class="absolute bottom-3 left-3 w-9 h-9 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-green-600 shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-clock w-6 h-6" aria-hidden="true">
+                                        <path d="M12 6v6l4 2"></path>
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                    </svg></div>
+                            </div>
+                            <div class="p-5">
+                                <h3
+                                    class="font-bold text-gray-900 text-sm mb-2 leading-snug group-hover:text-green-700 transition-colors">Генеральне прибирання</h3>
+                                <p class="text-xs text-gray-500 leading-relaxed mb-4">Глибока очистка приміщення до ідеального стану</p><button
+                                    class="inline-flex items-center gap-1 text-green-600 font-bold text-xs group-hover:gap-2 transition-all"><span>Детальніше</span><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5"
+                                        aria-hidden="true">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-green-200 hover:shadow-lg hover:shadow-green-50 transition-all duration-300">
+                            <div class="relative services-img h-48 overflow-hidden"><img alt="Прибирання після ремонту"
+                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    src="img/services/02.jpg">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                                <div
+                                    class="absolute bottom-3 left-3 w-9 h-9 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-green-600 shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-zap w-6 h-6" aria-hidden="true">
+                                        <path
+                                            d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                                        </path>
+                                    </svg></div>
+                            </div>
+                            <div class="p-5">
+                                <h3
+                                    class="font-bold text-gray-900 text-sm mb-2 leading-snug group-hover:text-green-700 transition-colors">
+                                    Прибирання після ремонту</h3>
+                                <p class="text-xs text-gray-500 leading-relaxed mb-4">Повне очищення простору від будівельного пилу та залишків матеріалів</p><button
+                                    class="inline-flex items-center gap-1 text-green-600 font-bold text-xs group-hover:gap-2 transition-all"><span>Детальніше</span><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5"
+                                        aria-hidden="true">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-green-200 hover:shadow-lg hover:shadow-green-50 transition-all duration-300">
+                            <div class="relative services-img h-48 overflow-hidden"><img alt="Миття вікон"
+                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    src="img/services/03.jpg">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                                <div
+                                    class="absolute bottom-3 left-3 w-9 h-9 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-green-600 shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-shield-check w-6 h-6"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                        </path>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg></div>
+                            </div>
+                            <div class="p-5">
+                                <h3
+                                    class="font-bold text-gray-900 text-sm mb-2 leading-snug group-hover:text-green-700 transition-colors">Миття вікон</h3>
+                                <p class="text-xs text-gray-500 leading-relaxed mb-4">Кристальна чистота скла без розводів і плям</p><button
+                                    class="inline-flex items-center gap-1 text-green-600 font-bold text-xs group-hover:gap-2 transition-all"><span>Детальніше</span><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5"
+                                        aria-hidden="true">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-green-200 hover:shadow-lg hover:shadow-green-50 transition-all duration-300">
+                            <div class="relative services-img h-48 overflow-hidden"><img alt="Хімічне чищення"
+                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    src="img/services/04.jpg">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                                <div
+                                    class="absolute bottom-3 left-3 w-9 h-9 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-green-600 shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-users w-6 h-6" aria-hidden="true">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                        <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                    </svg></div>
+                            </div>
+                            <div class="p-5">
+                                <h3
+                                    class="font-bold text-gray-900 text-sm mb-2 leading-snug group-hover:text-green-700 transition-colors">Хімічне чищення</h3>
+                                <p class="text-xs text-gray-500 leading-relaxed mb-4">Глибоке видалення плям і забруднень з делікатних поверхонь</p><button
+                                    class="inline-flex items-center gap-1 text-green-600 font-bold text-xs group-hover:gap-2 transition-all"><span>Детальніше</span><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-arrow-right w-3.5 h-3.5"
+                                        aria-hidden="true">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div class="grid lg:grid-cols-2 gap-14 items-center">
+                        <div>
+                            <h2 class="text-3xl lg:text-4xl font-black text-gray-900 mb-10">Наші переваги</h2>
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div
+                                    class="p-5 rounded-2xl border border-gray-100 hover:border-green-200 hover:bg-green-50/40 transition-all group">
+                                    <div
+                                        class="yellow w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-green-600 group-hover:text-white transition-all">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-award w-7 h-7" aria-hidden="true">
+                                            <path
+                                                d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+                                            </path>
+                                            <circle cx="12" cy="8" r="6"></circle>
+                                        </svg></div>
+                                    <h4 class="font-bold text-gray-900 mb-2 text-sm">Краща техніка</h4>
+                                    <p class="text-xs text-gray-500 leading-relaxed">Використовуємо лише передову
+                                        техніку німецького бренду Karcher для найвищої ефективності.</p>
+                                </div>
+                                <div
+                                    class="p-5 rounded-2xl border border-gray-100 hover:border-green-200 hover:bg-green-50/40 transition-all group">
+                                    <div
+                                        class="yellow w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-green-600 group-hover:text-white transition-all">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-leaf w-7 h-7" aria-hidden="true">
+                                            <path
+                                                d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z">
+                                            </path>
+                                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                                        </svg></div>
+                                    <h4 class="font-bold text-gray-900 mb-2 text-sm">Професійна хімія</h4>
+                                    <p class="text-xs text-gray-500 leading-relaxed">В асортименті засоби українських виробників — Good Result, San Clean та інші</p>
+                                </div>
+                                <div
+                                    class="p-5 rounded-2xl border border-gray-100 hover:border-green-200 hover:bg-green-50/40 transition-all group">
+                                    <div
+                                        class="yellow w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-green-600 group-hover:text-white transition-all">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-shield-check w-7 h-7" aria-hidden="true">
+                                            <path
+                                                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                            </path>
+                                            <path d="m9 12 2 2 4-4"></path>
+                                        </svg></div>
+                                    <h4 class="font-bold text-gray-900 mb-2 text-sm">Система знижок</h4>
+                                    <p class="text-xs text-gray-500 leading-relaxed">Знижка від 5 до 10% на комплексне
+                                        замовлення або при підписці на сезонне обслуговування.</p>
+                                </div>
+                                <div
+                                    class="p-5 rounded-2xl border border-gray-100 hover:border-green-200 hover:bg-green-50/40 transition-all group">
+                                    <div
+                                        class="yellow w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-green-600 group-hover:text-white transition-all">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-circle-check w-7 h-7" aria-hidden="true">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="m9 12 2 2 4-4"></path>
+                                        </svg></div>
+                                    <h4 class="font-bold text-gray-900 mb-2 text-sm">Нешкідливі засоби</h4>
+                                    <p class="text-xs text-gray-500 leading-relaxed">Використовуємо засоби без шкоди для
+                                        здоров'я та навколишнього середовища.</p>
+                                </div>
+                                <div
+                                    class="p-5 rounded-2xl border border-gray-100 hover:border-green-200 hover:bg-green-50/40 transition-all group">
+                                    <div
+                                        class="yellow w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-4 group-hover:bg-green-600 group-hover:text-white transition-all">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="font-bold text-gray-900 mb-2 text-sm">Графік</h4>
+                                    <p class="text-xs text-gray-500 leading-relaxed">Працюємо щодня, включно з вихідними. Ви можете замовити прибирання у зручний для вас час — вранці, вдень або ввечері. Ми завжди дотримуємося домовленостей і прибуваємо вчасно.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="relative rounded-3xl overflow-hidden shadow-xl"><img alt="Команда EcoClean"
+                                    class="w-full h-72 object-cover"
+                                    src="https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&amp;fit=crop&amp;q=80&amp;w=800">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-r from-slate-900/70 to-transparent flex flex-col justify-center p-8">
+                                    <p class="text-white/80 text-sm mb-2">Живіть повніше, щоб</p>
+                                    <p class="text-white font-black text-xl mb-5">прожити кращий власний день</p><button
+                                        class="self-start bg-green-500 hover:bg-green-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all">Замовити
+                                        чистку</button>
+                                </div>
+                            </div>
+                            <div class="relative img-economy rounded-3xl overflow-hidden shadow-xl"><img
+                                    alt="Прибирання — економія часу"
+                                    class="w-full h-48 object-cover broken-image-fallback"
+                                    src="img/02.jpg"
+                                    data-fallback-applied="true">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-r from-slate-900/70 to-transparent flex flex-col justify-center p-8">
+                                    <p class="text-white font-black text-lg mb-1">Економте час.</p>
+                                    <p class="text-white font-black text-lg mb-4">Зберігайте гроші.</p><button
+                                        class="self-start bg-green-500 hover:bg-green-600 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all">Замовити
+                                        чистку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio" class="py-20 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl lg:text-4xl font-black text-gray-900 mb-3">Наші виконані роботи</h2>
+                        <p class="text-gray-500">Подивіться на результати нашої роботи та переконайтеся в якості самі.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"><button class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer w-full" style="opacity: 1; transform: none; transform-origin: 50% 50% 0px;"><img alt="Бізнес-центр 'A-Class'" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&amp;fit=crop&amp;q=80&amp;w=800"><div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4"><span class="text-green-400 text-[10px] font-bold uppercase tracking-widest mb-1">Офіс</span><h4 class="text-white font-bold text-sm leading-tight">Бізнес-центр 'A-Class'</h4></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full border border-green-100">Офіс</div></button><button class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer w-full" style="opacity: 1; transform: none; transform-origin: 50% 50% 0px;"><img alt="ЖК 'RiverStone'" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&amp;fit=crop&amp;q=80&amp;w=800"><div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4"><span class="text-green-400 text-[10px] font-bold uppercase tracking-widest mb-1">Квартира</span><h4 class="text-white font-bold text-sm leading-tight">ЖК 'RiverStone'</h4></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full border border-green-100">Квартира</div></button><button class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer w-full" style="opacity: 1; transform: none; transform-origin: 50% 50% 0px;"><img alt="Ресторан 'Loft'" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&amp;fit=crop&amp;q=80&amp;w=800"><div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4"><span class="text-green-400 text-[10px] font-bold uppercase tracking-widest mb-1">Комерція</span><h4 class="text-white font-bold text-sm leading-tight">Ресторан 'Loft'</h4></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full border border-green-100">Комерція</div></button><button class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer w-full" style="opacity: 1; transform: none; transform-origin: 50% 50% 0px;"><img alt="Котедж в Конча-Заспі" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;q=80&amp;w=800"><div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4"><span class="text-green-400 text-[10px] font-bold uppercase tracking-widest mb-1">Будинок</span><h4 class="text-white font-bold text-sm leading-tight">Котедж в Конча-Заспі</h4></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full border border-green-100">Будинок</div></button><button class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer w-full" style="opacity: 1; transform: none; transform-origin: 50% 50% 0px;"><img alt="Миття панорамних вікон" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 broken-image-fallback" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='18' height='18' x='3' y='3' rx='2' ry='2'/%3E%3Ccircle cx='9' cy='9' r='2'/%3E%3Cpath d='m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21'/%3E%3C/svg%3E" data-fallback-applied="true"><div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4"><span class="text-green-400 text-[10px] font-bold uppercase tracking-widest mb-1">Вікна</span><h4 class="text-white font-bold text-sm leading-tight">Миття панорамних вікон</h4></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full border border-green-100">Вікна</div></button><button class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer w-full" style="opacity: 1; transform: none; transform-origin: 50% 50% 0px;"><img alt="Відновлення дивану" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&amp;fit=crop&amp;q=80&amp;w=800"><div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4"><span class="text-green-400 text-[10px] font-bold uppercase tracking-widest mb-1">Хімчистка</span><h4 class="text-white font-bold text-sm leading-tight">Відновлення дивану</h4></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full border border-green-100">Хімчистка</div></button><button class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer w-full" style="opacity: 1; transform: none; transform-origin: 50% 50% 0px;"><img alt="IT-хаб 'Space'" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 broken-image-fallback" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='18' height='18' x='3' y='3' rx='2' ry='2'/%3E%3Ccircle cx='9' cy='9' r='2'/%3E%3Cpath d='m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21'/%3E%3C/svg%3E" data-fallback-applied="true"><div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4"><span class="text-green-400 text-[10px] font-bold uppercase tracking-widest mb-1">Офіс</span><h4 class="text-white font-bold text-sm leading-tight">IT-хаб 'Space'</h4></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full border border-green-100">Офіс</div></button><button class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer w-full" style="opacity: 1; transform: none; transform-origin: 50% 50% 0px;"><img alt="Лофт апартаменти" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;q=80&amp;w=800"><div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4"><span class="text-green-400 text-[10px] font-bold uppercase tracking-widest mb-1">Після ремонту</span><h4 class="text-white font-bold text-sm leading-tight">Лофт апартаменти</h4></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full border border-green-100">Після ремонту</div></button><button class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer w-full" style="opacity: 1; transform: none;"><img alt="Студія в центрі Дніпра" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&amp;fit=crop&amp;q=80&amp;w=800"><div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4"><span class="text-green-400 text-[10px] font-bold uppercase tracking-widest mb-1">Квартира</span><h4 class="text-white font-bold text-sm leading-tight">Студія в центрі Дніпра</h4></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full border border-green-100">Квартира</div></button><button class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer w-full" style="opacity: 1; transform: none;"><img alt="Торговий центр" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1555529771-7888783a18d3?auto=format&amp;fit=crop&amp;q=80&amp;w=800"><div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4"><span class="text-green-400 text-[10px] font-bold uppercase tracking-widest mb-1">Комерція</span><h4 class="text-white font-bold text-sm leading-tight">Торговий центр</h4></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full border border-green-100">Комерція</div></button><button class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer w-full" style="opacity: 1; transform: none;"><img alt="Килим ручної роботи" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&amp;fit=crop&amp;q=80&amp;w=800"><div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4"><span class="text-green-400 text-[10px] font-bold uppercase tracking-widest mb-1">Хімчистка</span><h4 class="text-white font-bold text-sm leading-tight">Килим ручної роботи</h4></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full border border-green-100">Хімчистка</div></button><button class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer w-full" style="opacity: 1; transform: none;"><img alt="Заміський будинок" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&amp;fit=crop&amp;q=80&amp;w=800"><div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4"><span class="text-green-400 text-[10px] font-bold uppercase tracking-widest mb-1">Будинок</span><h4 class="text-white font-bold text-sm leading-tight">Заміський будинок</h4></div><div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full border border-green-100">Будинок</div></button></div>
+                    <div class="mt-10 text-center"><button
+                            class="inline-flex items-center gap-2 bg-white border border-gray-200 hover:border-green-400 hover:bg-green-50 text-gray-800 hover:text-green-700 font-bold px-8 py-3.5 rounded-xl transition-all shadow-sm group"><span>Завантажити
+                                ще</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-plus w-4 h-4 group-hover:rotate-90 transition-transform duration-300"
+                                aria-hidden="true">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5v14"></path>
+                            </svg></button></div>
+                </div>
+            </section>
+            <section id="reviews" class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+                        <div>
+                            <h2 class="text-3xl lg:text-4xl font-black text-gray-900 mb-2">Відгуки наших клієнтів</h2>
+                            <p class="text-gray-500">Ваші враження допомагають нам ставати ще кращими.</p>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 bg-gray-50 rounded-2xl px-6 py-4 border border-gray-100 shrink-0">
+                            <div>
+                                <p class="text-4xl font-black text-gray-900 leading-none">4.9</p>
+                                <p class="text-xs text-gray-400 mt-0.5">з 5 можливих</p>
+                            </div>
+                            <div>
+                                <div class="flex gap-0.5 mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 text-yellow-400 fill-yellow-400"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 text-yellow-400 fill-yellow-400"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 text-yellow-400 fill-yellow-400"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 text-yellow-400 fill-yellow-400"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-star w-5 h-5 text-yellow-400 fill-yellow-400"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg></div>
+                                <p class="text-xs text-gray-500">На основі <strong>140</strong> відгуків</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <div
+                            class="yellow bg-white border border-gray-100 rounded-2xl p-6 hover:border-green-200 hover:shadow-md hover:shadow-green-50/60 transition-all">
+                            <div class="flex gap-0.5 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg></div>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-5 italic"><span>«</span>Дуже задоволена
+                                якістю генерального прибирання. Команда працювала дуже ретельно, все блищить! Буду
+                                звертатися ще.<span>»</span></p>
+                            <div class="flex items-center gap-3 pt-4 border-t border-gray-50">
+                                <div class="w-10 h-10 rounded-full bg-green-100 overflow-hidden shrink-0"><img
+                                        alt="Олена Коваль" class="w-full h-full object-cover"
+                                        src="https://i.pravatar.cc/150?u=elena"></div>
+                                <div>
+                                    <p class="font-bold text-gray-900 text-sm">Олена Коваль</p>
+                                    <p class="text-[11px] text-gray-400">Власниця квартири · 15.05.2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="yellow bg-white border border-gray-100 rounded-2xl p-6 hover:border-green-200 hover:shadow-md hover:shadow-green-50/60 transition-all">
+                            <div class="flex gap-0.5 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg></div>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-5 italic"><span>«</span>Замовляли
+                                хімчистку диванів у офісі. Вивели плями, які ми думали вже нічим не відмити. Результат
+                                перевершив очікування!<span>»</span></p>
+                            <div class="flex items-center gap-3 pt-4 border-t border-gray-50">
+                                <div class="w-10 h-10 rounded-full bg-green-100 overflow-hidden shrink-0"><img
+                                        alt="Андрій Мороз" class="w-full h-full object-cover"
+                                        src="https://i.pravatar.cc/150?u=andrey"></div>
+                                <div>
+                                    <p class="font-bold text-gray-900 text-sm">Андрій Мороз</p>
+                                    <p class="text-[11px] text-gray-400">Менеджер офісу · 10.06.2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="yellow bg-white border border-gray-100 rounded-2xl p-6 hover:border-green-200 hover:shadow-md hover:shadow-green-50/60 transition-all">
+                            <div class="flex gap-0.5 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg></div>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-5 italic"><span>«</span>Приїхали вчасно,
+                                працювали швидко та якісно. Після ремонту квартира засяяла чистотою. Рекомендую
+                                всім!<span>»</span></p>
+                            <div class="flex items-center gap-3 pt-4 border-t border-gray-50">
+                                <div class="w-10 h-10 rounded-full bg-green-100 overflow-hidden shrink-0"><img
+                                        alt="Марина Іванова" class="w-full h-full object-cover"
+                                        src="https://i.pravatar.cc/150?u=marina"></div>
+                                <div>
+                                    <p class="font-bold text-gray-900 text-sm">Марина Іванова</p>
+                                    <p class="text-[11px] text-gray-400">Клієнт · 22.07.2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="yellow bg-white border border-gray-100 rounded-2xl p-6 hover:border-green-200 hover:shadow-md hover:shadow-green-50/60 transition-all">
+                            <div class="flex gap-0.5 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg></div>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-5 italic"><span>«</span>Обслуговуємо офіс
+                                вже рік. Завжди чисто, персонал ввічливий і відповідальний. Ціна відповідає
+                                якості.<span>»</span></p>
+                            <div class="flex items-center gap-3 pt-4 border-t border-gray-50">
+                                <div class="w-10 h-10 rounded-full bg-green-100 overflow-hidden shrink-0"><img
+                                        alt="Тарас Бондаренко" class="w-full h-full object-cover"
+                                        src="https://i.pravatar.cc/150?u=taras"></div>
+                                <div>
+                                    <p class="font-bold text-gray-900 text-sm">Тарас Бондаренко</p>
+                                    <p class="text-[11px] text-gray-400">Підприємець · 05.09.2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="yellow bg-white border border-gray-100 rounded-2xl p-6 hover:border-green-200 hover:shadow-md hover:shadow-green-50/60 transition-all">
+                            <div class="flex gap-0.5 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg></div>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-5 italic"><span>«</span>Замовляла
+                                прибирання після ремонту. Прийшли, все зробили ідеально. Будівельний пил зник повністю.
+                                Дякую!<span>»</span></p>
+                            <div class="flex items-center gap-3 pt-4 border-t border-gray-50">
+                                <div class="w-10 h-10 rounded-full bg-green-100 overflow-hidden shrink-0"><img
+                                        alt="Наталія Шевченко" class="w-full h-full object-cover"
+                                        src="https://i.pravatar.cc/150?u=natalia"></div>
+                                <div>
+                                    <p class="font-bold text-gray-900 text-sm">Наталія Шевченко</p>
+                                    <p class="text-[11px] text-gray-400">Домогосподарка · 18.10.2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="yellow bg-white border border-gray-100 rounded-2xl p-6 hover:border-green-200 hover:shadow-md hover:shadow-green-50/60 transition-all">
+                            <div class="flex gap-0.5 mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg></div>
+                            <p class="text-gray-700 text-sm leading-relaxed mb-5 italic"><span>«</span>Хорошо зробили
+                                генеральне прибирання. Якість висока, ціни адекватні. Порадив би скоротити час
+                                очікування.<span>»</span></p>
+                            <div class="flex items-center gap-3 pt-4 border-t border-gray-50">
+                                <div class="w-10 h-10 rounded-full bg-green-100 overflow-hidden shrink-0"><img
+                                        alt="Ігор Петренко" class="w-full h-full object-cover"
+                                        src="https://i.pravatar.cc/150?u=igor"></div>
+                                <div>
+                                    <p class="font-bold text-gray-900 text-sm">Ігор Петренко</p>
+                                    <p class="text-[11px] text-gray-400">IT-спеціаліст · 02.11.2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-14 items-start">
+                    <div class="hidden lg:block sticky top-28">
+                        <div class="rounded-3xl overflow-hidden shadow-xl"><img alt="Прибирання — FAQ"
+                                class="w-full h-96 object-cover"
+                                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&amp;fit=crop&amp;q=80&amp;w=700">
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl lg:text-4xl font-black text-gray-900 mb-8">Поширені запитання</h2>
+                        <div class="space-y-3">
+                            <div
+                                class="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:border-green-200 transition-colors">
+                                <button class="w-full flex items-center justify-between gap-4 p-5 text-left"><span
+                                        class="font-semibold text-gray-900 text-sm pr-2">Коли потрібно робити генеральне
+                                        прибирання?</span><span class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-plus w-4 h-4 text-gray-400" aria-hidden="true">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5v14"></path>
+                                        </svg></span></button>
+                                <div class="overflow-hidden" style="height: auto; opacity: 1;"><p class="px-5 pb-5 text-sm text-gray-500 leading-relaxed border-t border-gray-50">Ми рекомендуємо проводити генеральне прибирання кожні 3–6 місяців для підтримки здорової атмосфери в оселі.</p></div>
+                            </div>
+                            <div
+                                class="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:border-green-200 transition-colors">
+                                <button class="w-full flex items-center justify-between gap-4 p-5 text-left"><span
+                                        class="font-semibold text-gray-900 text-sm pr-2">Які роботи включає послуга
+                                        генеральне прибирання?</span><span class="shrink-0"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-plus w-4 h-4 text-gray-400" aria-hidden="true">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5v14"></path>
+                                        </svg></span></button></div>
+                            <div
+                                class="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:border-green-200 transition-colors">
+                                <button class="w-full flex items-center justify-between gap-4 p-5 text-left"><span
+                                        class="font-semibold text-gray-900 text-sm pr-2">Чи входить миття вікон у
+                                        прибирання?</span><span class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-plus w-4 h-4 text-gray-400" aria-hidden="true">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5v14"></path>
+                                        </svg></span></button></div>
+                            <div
+                                class="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:border-green-200 transition-colors">
+                                <button class="w-full flex items-center justify-between gap-4 p-5 text-left"><span
+                                        class="font-semibold text-gray-900 text-sm pr-2">Чи надаються гарантії
+                                        якості?</span><span class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-plus w-4 h-4 text-gray-400" aria-hidden="true">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5v14"></path>
+                                        </svg></span></button></div>
+                            <div
+                                class="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:border-green-200 transition-colors">
+                                <button class="w-full flex items-center justify-between gap-4 p-5 text-left"><span
+                                        class="font-semibold text-gray-900 text-sm pr-2">Скільки тривалість прибирання /
+                                        хімчистки?</span><span class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-plus w-4 h-4 text-gray-400" aria-hidden="true">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5v14"></path>
+                                        </svg></span></button></div>
+                            <div
+                                class="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:border-green-200 transition-colors">
+                                <button class="w-full flex items-center justify-between gap-4 p-5 text-left"><span
+                                        class="font-semibold text-gray-900 text-sm pr-2">Наскільки ефективно видаляються
+                                        плями?</span><span class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-plus w-4 h-4 text-gray-400" aria-hidden="true">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5v14"></path>
+                                        </svg></span></button></div>
+                            <div
+                                class="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:border-green-200 transition-colors">
+                                <button class="w-full flex items-center justify-between gap-4 p-5 text-left"><span
+                                        class="font-semibold text-gray-900 text-sm pr-2">Чи безпечно перебувати під час
+                                        хімчистки в приміщенні?</span><span class="shrink-0"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-plus w-4 h-4 text-gray-400" aria-hidden="true">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5v14"></path>
+                                        </svg></span></button></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div class="grid lg:grid-cols-2 gap-14 items-start">
+                        <div>
+                            <h2 class="text-3xl lg:text-4xl font-black text-gray-900 mb-3">Контакти</h2>
+                            <p class="text-gray-500 mb-8">Зв'яжіться з нами будь-яким зручним способом.</p>
+                            <div class="space-y-5"><a href="tel:+380934311687"
+                                    class="flex items-center gap-4 p-5 bg-gray-50 rounded-2xl border border-gray-100 hover:border-green-300 hover:bg-green-50 transition-all group">
+                                    <div
+                                        class="yellow w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-all shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-phone w-5 h-5" aria-hidden="true">
+                                            <path
+                                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384">
+                                            </path>
+                                        </svg></div>
+                                    <div>
+                                        <p class="text-[11px] text-gray-400 uppercase tracking-wide font-medium mb-0.5">
+                                            Телефон</p>
+                                        <p class="font-bold text-gray-900">+38 093 431 16 87</p>
+                                    </div>
+                                </a><a href="mailto:hello@ecoclean.com.ua"
+                                    class="flex items-center gap-4 p-5 bg-gray-50 rounded-2xl border border-gray-100 hover:border-green-300 hover:bg-green-50 transition-all group">
+                                    <div
+                                        class="yellow w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center group-hover:bg-green-600 group-hover:text-white transition-all shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-mail w-5 h-5" aria-hidden="true">
+                                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                        </svg></div>
+                                    <div>
+                                        <p class="text-[11px] text-gray-400 uppercase tracking-wide font-medium mb-0.5">
+                                            Email</p>
+                                        <p class="font-bold text-gray-900">hello@ecoclean.com.ua</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-gray-50 rounded-3xl p-8 border border-gray-100">
+                                <h3 class="text-xl font-black text-gray-900 mb-1">Залишити заявку</h3>
+                                <p class="text-sm text-gray-500 mb-7">на безкоштовну консультацію</p>
+                                <form class="space-y-5">
+                                    <div><label class="block text-sm font-bold text-gray-700 mb-2">Ваше
+                                            ім'я</label><input placeholder="Ім'я"
+                                            class="w-full bg-white border border-gray-200 p-3.5 rounded-xl text-sm focus:ring-2 focus:ring-green-400 focus:border-transparent outline-none transition-all"
+                                            type="text"></div>
+                                    <div><label class="block text-sm font-bold text-gray-700 mb-2">Телефон</label><input
+                                            placeholder="+38 (___) ___-__-__"
+                                            class="w-full bg-white border border-gray-200 p-3.5 rounded-xl text-sm focus:ring-2 focus:ring-green-400 focus:border-transparent outline-none transition-all"
+                                            type="tel"></div>
+                                    <div><label class="block text-sm font-bold text-gray-700 mb-2">Електронна
+                                            пошта</label><input placeholder="email@example.com"
+                                            class="w-full bg-white border border-gray-200 p-3.5 rounded-xl text-sm focus:ring-2 focus:ring-green-400 focus:border-transparent outline-none transition-all"
+                                            type="email"></div>
+                                    <div><label class="block text-sm font-bold text-gray-700 mb-2">Ваше
+                                            повідомлення</label><textarea rows="4"
+                                            placeholder="Опишіть, що вас цікавить..."
+                                            class="w-full bg-white border border-gray-200 p-3.5 rounded-xl text-sm focus:ring-2 focus:ring-green-400 focus:border-transparent outline-none transition-all resize-none"></textarea>
+                                    </div><button type="submit"
+                                        class="w-full bg-green-600 hover:bg-green-700 text-white font-black py-4 rounded-xl text-base transition-all shadow-lg shadow-green-200 hover:-translate-y-0.5 active:translate-y-0">Надіслати</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="bg-gray-900 pt-16 pb-8">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
+                        <div class="lg:col-span-1">
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="w-8 h-8 rounded-lg flex items-center justify-center footer-logo">
+                                    <img src="img/logo.png" alt="logo">
+                                </div>
+                            </div>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-5">Зателефонуйте нам:<br><a
+                                    href="tel:+380934311687"
+                                    class="text-white font-bold hover:text-green-400 transition-colors">+38 093 431 16 87</a></p>
+                            <div class="flex gap-3"><a href="https://www.instagram.com/clean_chysta_peremoha/" aria-label="Instagram"
+                                    class="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-green-600 hover:text-white transition-all"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-instagram w-4 h-4"
+                                        aria-hidden="true">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                    </svg></a><a href="#" aria-label="Facebook"
+                                    class="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-green-600 hover:text-white transition-all"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-facebook w-4 h-4"
+                                        aria-hidden="true">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                        </path>
+                                    </svg></a><a href="#" aria-label="Twitter"
+                                    class="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-green-600 hover:text-white transition-all"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-twitter w-4 h-4"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                        </path>
+                                    </svg></a></div>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm mb-5">Послуги</h5>
+                            <ul class="space-y-3">
+                                <li><a href="#"
+                                        class="text-gray-400 text-xs hover:text-green-400 transition-colors leading-relaxed">Генеральне прибирання</a></li>
+                                <li><a href="#"
+                                        class="text-gray-400 text-xs hover:text-green-400 transition-colors leading-relaxed">Прибирання після ремонту</a></li>
+                                        <li><a href="#"
+                                        class="text-gray-400 text-xs hover:text-green-400 transition-colors leading-relaxed">Миття вікон</a></li>
+                                        <li><a href="#"
+                                        class="text-gray-400 text-xs hover:text-green-400 transition-colors leading-relaxed">Хімічне чищення</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm mb-5 opacity-0 select-none">-</h5>
+                            <ul class="space-y-3">
+                                <li><a href="#"
+                                        class="text-gray-400 text-xs hover:text-green-400 transition-colors leading-relaxed">Прибирання
+                                        після ремонту</a></li>
+                                <li><a href="#"
+                                        class="text-gray-400 text-xs hover:text-green-400 transition-colors leading-relaxed">Генеральне
+                                        прибирання комерційних приміщень</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="text-white font-bold text-sm mb-5">Соц. мережі</h5>
+                            <div class="space-y-3"><a href="#"
+                                    class="flex items-center gap-2 text-gray-400 text-xs hover:text-green-400 transition-colors"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-twitter w-4 h-4"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                                        </path>
+                                    </svg><span>Twitter</span></a><a href="#"
+                                    class="flex items-center gap-2 text-gray-400 text-xs hover:text-green-400 transition-colors"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-facebook w-4 h-4"
+                                        aria-hidden="true">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                        </path>
+                                    </svg><span>Facebook</span></a><a href="https://www.instagram.com/clean_chysta_peremoha/"
+                                    class="flex items-center gap-2 text-gray-400 text-xs hover:text-green-400 transition-colors"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-instagram w-4 h-4"
+                                        aria-hidden="true">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                    </svg><span>Instagram</span></a><a href="#"
+                                    class="flex items-center gap-2 text-gray-400 text-xs hover:text-green-400 transition-colors"><svg
+                                        class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z">
+                                        </path>
+                                    </svg><span>YouTube</span></a>
+                                <div class="pt-3">
+                                    <p class="text-gray-400 text-xs mb-2 font-semibold">Ми приймаємо платежі:</p>
+                                    <div class="flex gap-2"><span
+                                            class="bg-gray-800 text-gray-300 text-[10px] font-bold px-2 py-1 rounded">Visa</span><span
+                                            class="bg-gray-800 text-gray-300 text-[10px] font-bold px-2 py-1 rounded">MC</span><span
+                                            class="bg-gray-800 text-gray-300 text-[10px] font-bold px-2 py-1 rounded">PP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col sm:flex-row justify-between items-center gap-3 pt-8 border-t border-gray-800 text-xs text-gray-500">
+                        <p>© 2026 Чиста перемога - клінінгова компанія. Усі права захищено.</p>
+                        <p>Дизайн та розробка — dimaformaa</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
